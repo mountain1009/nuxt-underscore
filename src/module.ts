@@ -1,5 +1,6 @@
 import { defineNuxtModule } from "@nuxt/kit";
 import * as underscore from "underscore";
+import exculdeDefaults from "./exclude";
 
 export interface ModuleOptions {
   /**
@@ -47,7 +48,7 @@ export default defineNuxtModule<ModuleOptions>({
     const imports = [];
     const prefix = options.prefix || "";
     const aliasMap = new Map(options.alias);
-    const exludes = [...options.exclude];
+    const exludes = [...options.exclude, ...exculdeDefaults];
 
     for (const [name] of Object.entries(underscore)) {
       if (!exludes.includes(name)) {
