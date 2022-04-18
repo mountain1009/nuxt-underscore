@@ -1,6 +1,6 @@
  <h1>underscore for Nuxt</h1>
 
-I referred to [here](https://github.com/mountain1009/nuxt-lodash) for the configuration
+I referred to [here](https://github.com/cipami/nuxt-lodash)) for the configuration
 
 <p>
   <a href="https://www.npmjs.com/package/nuxt-underscore"><img src="https://badgen.net/npm/v/nuxt-underscore" alt="Version"></a>
