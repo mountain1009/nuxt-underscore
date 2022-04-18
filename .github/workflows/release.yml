@@ -17,7 +17,7 @@ jobs:
           node-version: "16"
 
       - name: Install dependencies
-        run: yarn ci
+        run: yarn && yarn ci
 
       - name: Semantic Release
         run: yarn run semantic-release
