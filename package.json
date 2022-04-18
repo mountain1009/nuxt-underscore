@@ -1,0 +1,51 @@
+{
+  "name": "nuxt-underscore",
+  "version": "1.0.0",
+  "description": "underscore for Nuxt",
+  "keywords": [
+    "nuxt",
+    "nuxt-module",
+    "nuxt-underscore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mountain1009/nuxt-underscore"
+  },
+  "author": {
+    "name": "mountain1009",
+    "email": "mountain.09hand@gmail.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build",
+    "play": "nuxi dev playground",
+    "play:build": "nuxi build playground",
+    "play:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "underscore": "^1.13.2"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "latest",
+    "@nuxtjs/eslint-config-typescript": "latest",
+    "@semantic-release/git": "10.0.1",
+    "conventional-changelog-conventionalcommits": "4.6.3",
+    "eslint": "latest",
+    "nuxt3": "latest",
+    "semantic-release": "19.0.2"
+  }
+}
